@@ -49,6 +49,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    
+    // 将微博信息与其布局信息传递至自定义cell
     XFWebTableViewCell *cell = [XFWebTableViewCell webCellWithTableView:tableView];
     cell.webFrame = self.webFrames[indexPath.row];
     return cell;
@@ -56,6 +57,7 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //高度已经计算完成，直接使用
     XFWebFrame *frame = self.webFrames[indexPath.row];
     return frame.cellHight;
 }

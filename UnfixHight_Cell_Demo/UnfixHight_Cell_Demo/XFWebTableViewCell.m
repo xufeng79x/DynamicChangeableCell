@@ -66,6 +66,7 @@
     return self;
 }
 
+// 接受微博信息和布局信息
 - (void)setWebFrame:(XFWebFrame *)webFrame
 {
     _webFrame = webFrame;
